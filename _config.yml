@@ -10,3 +10,5 @@ github_username: joaquimsn
 
 # Build settings
 markdown: kramdown
+
+remote_theme: dp6/dp6.github.io
