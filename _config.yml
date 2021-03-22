@@ -1,5 +1,5 @@
 # Site settings
-title: JSN
+title: CI
 email: contato@joaquimsn.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "hi" # the subpath of your site, e.g. /blog/
@@ -11,4 +11,4 @@ github_username: joaquimsn
 # Build settings
 markdown: kramdown
 
-remote_theme: dp6/dp6.github.io
+#remote_theme: dp6/dp6.github.io
