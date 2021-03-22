@@ -1,10 +1,10 @@
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
-        {% for repository in site.github.public_repositories %}
+        {% for repository in site.github.public_repositories limit:6 %}
             <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                    <img src="https://picsum.photos/421/227" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
