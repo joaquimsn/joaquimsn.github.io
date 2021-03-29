@@ -14,7 +14,6 @@ jobs:
     steps:
       - name: Um
         uses: actions/checkout@v2
-      - name: Dois
         uses: helaili/jekyll-action@2.0.5
       - name: tres
         run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
