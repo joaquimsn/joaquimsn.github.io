@@ -6,15 +6,18 @@ on:
   pull_request:
     branches: main
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/8* * * *"
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@v2
-        with:
-          target_branch: 'gh-pages'
-          token: ${{ secrets.JEKYLL_PAT }}
-        
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Build and deploy
+      uses: helaili/jekyll-action@v2
+      with:
+        target_branch: 'gh-pages'
+        token: ${{ secrets.JEKYLL_PAT }}
+      
