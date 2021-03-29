@@ -12,8 +12,11 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.0.5
+      - name: Um
+        uses: actions/checkout@v2
+      - name: Dois
+        uses: helaili/jekyll-action@2.0.5
+      - name: tres
         run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
         with:
           target_branch: 'gh-pages'
