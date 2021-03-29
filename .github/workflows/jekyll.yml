@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: main
   schedule:
-    - cron: "*/5 * * * *"
+    cron: "*/5 * * * *"
 
 jobs:
   github-pages:
@@ -14,8 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: helaili/jekyll-action@v2
-      - name: tres
-        run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
-      - name: deploy
         with:
           target_branch: 'gh-pages'
+          token: ${{ secrets.JEKYLL_PAT }}
+      - name: tres
+        run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
+        
