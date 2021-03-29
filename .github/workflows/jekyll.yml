@@ -16,5 +16,6 @@ jobs:
       - uses: helaili/jekyll-action@v2
       - name: tres
         run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
+      - name: deploy
         with:
           target_branch: 'gh-pages'
