@@ -12,9 +12,8 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Um
-        uses: actions/checkout@v2
-        uses: helaili/jekyll-action@2.0.5
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@v2
       - name: tres
         run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
         with:
