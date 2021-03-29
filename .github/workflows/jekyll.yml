@@ -17,6 +17,6 @@ jobs:
         with:
           target_branch: 'gh-pages'
           token: ${{ secrets.JEKYLL_PAT }}
-      - name: tres
+      - name: Teste
         run: export JEKYLL_PAT=${{ secrets.JEKYLL_PAT }}
         
