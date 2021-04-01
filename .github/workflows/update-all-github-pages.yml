@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install jq
-      run: sudo apt-get update && apt-get install --no-install-recommends -y jq findutils curl ca-certificates
+      run: sudo apt-get update && apt install --no-install-recommends -y jq
 
     - name: Update respositories public with gh-page
       run: sh build-github-pages-dp6.sh ${{ secrets.GH_PAGES_USER }} ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
